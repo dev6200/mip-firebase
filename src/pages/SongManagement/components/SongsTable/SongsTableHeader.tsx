@@ -1,5 +1,5 @@
 const SongsTableHeader = () => (
-  <div className="grid grid-cols-6">
+  <div className="grid grid-cols-6 border-b border-slate-200">
     <h2 className="col-span-1">Title</h2>
     <h2 className="col-span-1">Composer</h2>
     <h2 className="col-span-1">Album</h2>
