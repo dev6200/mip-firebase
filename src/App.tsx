@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ProtectedRoute } from "./components/ProtectedRoute";
+import { SongManagement } from "./pages/SongManagement";
 
 function App() {
   // const [songList, setSongList] = useState<any[]>([]);
@@ -40,7 +41,7 @@ function App() {
             element={
               <ProtectedRoute>
                 <Routes>
-                  <Route path="/" element={<span>Hello World</span>} />
+                  <Route path="/" element={<SongManagement />} />
                 </Routes>
               </ProtectedRoute>
             }
